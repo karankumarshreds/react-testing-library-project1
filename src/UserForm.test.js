@@ -23,7 +23,6 @@ test('it calls onUserAdd when the form is submitted', () => {
         const emailInput = screen.getByRole('textbox', { name: /email/i });
         user.type(nameInput, 'name');
         user.type(emailInput, 'email');
-
         const button = screen.getByRole('button');
         user.click(button);
     });
