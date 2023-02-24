@@ -7,12 +7,12 @@ function UserForm({ onUserAdd }) {
     }
     return <div>
         <div>
-        <label>Name</label>
-            <input value={state.name} onChange={(e) => setState({...state, name: e.target.value})}/>
+            <label htmlFor='name'>Name</label>
+            <input id="name" value={state.name} onChange={(e) => setState({ ...state, name: e.target.value })} />
         </div>
         <div>
-            <label>Email</label>
-            <input value={state.email} onChange={(e) => setState({...state, email: e.target.value})}/>
+            <label htmlFor='email'>Email</label>
+            <input id="email" value={state.email} onChange={(e) => setState({ ...state, email: e.target.value })} />
         </div>
         <button onClick={submit}>Add User</button>
     </div>
